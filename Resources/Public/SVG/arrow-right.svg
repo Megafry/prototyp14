@@ -1,0 +1,26 @@
+<svg width="40" height="70" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="72" width="42" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_7">
+   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="35.522157" x2="36.921239" y1="1.679691" x1="3.078773" fill-opacity="0" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+   <line transform="rotate(90 20.000005722045895,51.39908599853516) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="68.320318" x2="36.921239" y1="34.477852" x1="3.078773" fill-opacity="null" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="35.397682" x2="37.045714" y1="1.555216" x1="3.203248" fill-opacity="0" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+   <g id="svg_14">
+    <line transform="rotate(90 20.124483108520504,52.02145385742188) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="68.942692" x2="37.045714" y1="35.100226" x1="3.203248" fill-opacity="null" stroke-width="1.5" stroke="#000000" fill="none"/>
+    <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_11" y2="36.020057" x2="37.170189" y1="2.177591" x1="3.327723" fill-opacity="0" stroke-width="1.5" stroke="#000000" fill="none"/>
+   </g>
+   <g id="svg_17">
+    <line transform="rotate(90 20.12447929382324,51.64803314208985) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_15" y2="68.569267" x2="37.045714" y1="34.726802" x1="3.203248" fill-opacity="null" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+    <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_16" y2="35.646632" x2="37.170189" y1="1.804166" x1="3.327723" fill-opacity="0" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+   </g>
+  </g>
+ </g>
+</svg>

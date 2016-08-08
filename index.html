@@ -9,10 +9,62 @@
    <base href=""> <!-- http://localhost/prototyp14/ -->
    <body>
    
-   
+   <!-- Slick Slider -->
+
+
+   <div class="slider single-item">
+      
+      <div class="item" style="background-image: url(http://lorempicsum.com/futurama/900/350/1)">
+          <div class="visible-xs">
+            <img class="img-responsive" src="http://lorempicsum.com/futurama/900/350/1" alt="First slide">
+          </div>
+          <div class="container">
+            <div class="col-sm-6 col-sm-offset-6 text-box">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item" style="background-image: url(http://lorempicsum.com/futurama/900/350/2)">
+          <div class="visible-xs">
+            <img class="img-responsive" src="http://lorempicsum.com/futurama/900/350/2" alt="Second slide">
+          </div>
+          <div class="container">
+            <div class="col-sm-6 col-sm-offset-6  text-box">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item" style="background-image: url(http://lorempicsum.com/futurama/900/350/3)">
+          <div class="visible-xs">
+            <img class="img-responsive" src="http://lorempicsum.com/futurama/900/350/3" alt="Third slide">
+          </div>
+          <div class="container">
+            <div class="col-sm-6 col-sm-offset-6  text-box">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+
+   </div>
+
+
+
+
+
+    <!-- /.Slick Slider -->
+
    <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div id="myCarousel" class="carousel slide hidden" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -23,7 +75,7 @@
         <div class="item active">
           <img class="first-slide" src="http://lorempicsum.com/futurama/900/350/1" alt="First slide">
           <div class="container">
-            <div class="carousel-caption">
+            <div class="col-sm-6 col-sm-offset-6">
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -33,7 +85,7 @@
         <div class="item">
           <img class="second-slide" src="http://lorempicsum.com/futurama/900/350/2" alt="Second slide">
           <div class="container">
-            <div class="carousel-caption">
+            <div class="col-sm-6 col-sm-offset-6">
               <h1>Another example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
@@ -43,7 +95,7 @@
         <div class="item">
           <img class="third-slide" src="http://lorempicsum.com/futurama/900/350/3" alt="Third slide">
           <div class="container">
-            <div class="carousel-caption">
+            <div class="col-sm-6 col-sm-offset-6">
               <h1>One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -671,8 +723,12 @@ print 'It took ' + i + ' iterations to sort the deck.';
       </div>
       <!-- Scripts -->
       
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
       <script src="Resources/Public/JavaScript/bootstrap.min.js"></script>
+      <script src="Resources/Public/JavaScript/slick.min.js"></script>
       <script src="Resources/Public/JavaScript/less.min.js" data-poll="1000" data-relative-urls="false"></script>
+      <script src="Resources/Public/JavaScript/main.js"></script>
    </body>
 </html>
