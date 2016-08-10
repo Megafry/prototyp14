@@ -11,6 +11,12 @@ $(document).ready(function(){
 
 	});
 
+	
+	$('input[type=file]').change( function(){
+    	var filename = $(this).val().split('\\').pop();
+    	$(this).next().attr("date-fileName",filename);
+    });
+	
 
 });
 
