@@ -4,15 +4,75 @@
       <title>prototyp14</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+
+      <!-- Static CSS or external -->
+      <link rel="stylesheet" href="Resources/Public/CSS/font-awesome.css" />
+
+      <!-- less -->
       <link rel="stylesheet/less" href="Resources/Public/Less/main.less" />
+
    </head>
    <base href=""> <!-- http://localhost/prototyp14/ -->
    <body>
+
+<div id="main-navigation" class="">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-globe" aria-hidden="true"></i> Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
    
    <!-- Slick Slider -->
 
 
-   <div class="slider single-item">
+   <div class="slider single-item main-slider">
       
       <div class="item" style="background-image: url(http://lorempicsum.com/futurama/900/350/1)">
           <div class="visible-xs">
@@ -129,6 +189,31 @@
                   <h4>h4. Bootstrap heading</h4>
                   <h5>h5. Bootstrap heading</h5>
                   <h6>h6. Bootstrap heading</h6>
+
+                  <h3>Color</h3>
+
+                  <div class="ui-color">
+                    <p class="brand-primary-bg" >@brand-primary</p>
+                    <p class="gray-base-bg" >@gray-base</p>
+                    <p class="gray-darker-bg" >@gray-darker</p>
+                    <p class="gray-dark-bg" >@gray-dark</p>
+                    <p class="gray-bg" >@gray</p>
+                    <p class="gray-light-bg" >@gray-light</p>
+                    <p class="gray-lighter-bg" >@gray-lighter</p>
+                  </div>
+
+
+                  <div class="brand-liste">
+                    <div class="brand-liste-title">brand-liste </div>
+                    <ul >
+                      <li><a class="external-link" href="http://www.Twitter.com">Twitter</a></li>
+                      <li><a class="external-link" href="http://www.Facebook.com">Facebook</a></li>
+                      <li><a href="http://www.Instagram.com">Instagram</a></li>
+                      <li><a href="http://www.GitHub.com">GitHub</a></li>
+                      <li><a href="http://www.Dribbble.com">Dribbble</a></li>
+                    </ul>
+                  </div>
+
                   <div class="ui-heading-sub">lead</div>
                   <p class="lead">
                   	is eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
@@ -166,12 +251,85 @@
 	 </div><!-- container -->
   </section>
   
+
+ <section class="section2">
+
+ <div class="card-deck text-center profile-area">
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/800/400/1" class="img-responsive card-img-top"alt="lorem">
+ <img class="card-profile-img img-thumbnail img-circle" src="https://avatars0.githubusercontent.com/u/10438940?v=3&s=460">
+
+
+            <div class="card-block">
+               <h4 class="card-title">Eugen Fritz</h4>
+               <p class="card-text">I wrote this code.</p>
+            </div>
+            <div class="card-bottom ">
+               <a href="//github.com/megafry" target="_blank" class="btn btn-primary btn-sm">View GitHub</a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/800/400/2" class="img-responsive card-img-top"alt="lorem">
+            <img class="card-profile-img img-thumbnail img-circle" src="//cdn.shopify.com/s/files/1/0691/5403/t/125/assets/avatar-mdo.jpg?165441123603043936">
+            <div class="card-block">
+               <h4 class="card-title">Mark Otto</h4>
+               <p class="card-text">Bootstrap,was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap</p>
+            </div>
+            <div class="card-bottom ">
+               <a href="//github.com/mdo" target="_blank" class="btn btn-primary btn-sm">View GitHub</a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/800/400/3" class="img-responsive card-img-top"alt="lorem">
+            <img class="card-profile-img img-thumbnail img-circle" src=" https://avatars1.githubusercontent.com/u/693790?v=3&s=460">
+            <div class="card-block">
+               <h4 class="card-title">Dave Gamache</h4>
+               <p class="card-text">Burritos are my spirit animal. Previously Twitter and Medium.</p>
+            </div>
+            <div class="card-bottom ">
+               <a href="//github.com/dhg" target="_blank" class="btn btn-primary btn-sm">View GitHub</a>
+            </div>
+         </div>
+      </div>
+      <!-- end card-deck-->
+</section>
+
   <section class="section4">
 	 <div class="container">
 		<div class="row">
-		   <div class="col-sm-12">
+		  
+     <div class="col-sm-12">
                   
-                  
+     
+      <div class="card-group">
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/450/200/3" class="img-responsive card-img-top"alt="lorem">
+            <div class="card-block">
+               <h4 class="card-title">Card title</h4>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/450/200/3" class="img-responsive card-img-top"alt="lorem">
+            <div class="card-block">
+               <h4 class="card-title">Card title</h4>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+         <div class="card">
+            <img src="http://lorempicsum.com/futurama/450/200/3" class="img-responsive card-img-top"alt="lorem">
+            <div class="card-block">
+               <h4 class="card-title">Card title</h4>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+         </div>
+      </div>
+      <!-- end card-group-->
+
+
                   <div class="ui-heading-sub">Lists</div>
                   <ul>
                      <li>Lorem ipsum dolor sit amet</li>
@@ -280,7 +438,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
                   <!-- Form -->
                   <a id="Form" class="anchorLink">&nbsp;</a>
                   <h2>Form</h2>
-                  <form method="post" action="#" class="defaultForm1">
+                  <form method="post" action="#" class="defaultForm">
                      
                   	<div class="row" >
                         <div class="col-sm-6 col-sm-offset-6">
@@ -727,10 +885,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
            
             <input id="captchaResponse-1" type="hidden" name="tx_powermail_pi1[field][sicherheitscode]" value="">
             <div id="captchaResponse1">
-               <div style="width: 304px; height: 78px;">
-                  <div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcEeSITAAAAAETeLcU5_nSA3IvwQIDbfsWo_uFu&amp;co=aHR0cDovL2Rldi5jYWJhZy5jaC5jYWJ2czAxMy5uaW5lLmNoOjgw&amp;hl=de&amp;v=r20160802154045&amp;size=normal&amp;cb=83us9u45pek6" title="reCAPTCHA-Widget" width="304" height="78" role="presentation" frameborder="0" scrolling="no" name="undefined"></iframe></div>
-                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
-               </div>
+       
             </div>
          </div>
          <div id="powermail_fieldwrap_56">
@@ -765,6 +920,17 @@ print 'It took ' + i + ' iterations to sort the deck.';
             <div class="row">
                <div class="col-sm-12">
                   <h2>Lists</h2>
+
+
+                  <ul>
+                     <li><a href="#"><span>Twitter</span></a></li>
+                     <li><a href="#"><span>Facebook</span></a></li>
+                     <li><a href="#"><span>Instagram</span></a></li>
+                     <li><a href="#"><span>GitHub</span></a></li>
+                     <li><a href="#"><span>Dribbble</span></a></li>
+                  </ul>
+
+
                   <div>
                      <div>
                         <h3>Unordered</h3>
@@ -800,13 +966,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
                            <li><a href="#"><span>GitHub</span></a></li>
                            <li><a href="#"><span>Dribbble</span></a></li>
                         </ul>
-                        <ul>
-                           <li><a href="#"><span>Twitter</span></a></li>
-                           <li><a href="#"><span>Facebook</span></a></li>
-                           <li><a href="#"><span>Instagram</span></a></li>
-                           <li><a href="#"><span>GitHub</span></a></li>
-                           <li><a href="#"><span>Dribbble</span></a></li>
-                        </ul>
+                        
                      </div>
                   </div>
                   <h2>Actions</h2>
@@ -1029,7 +1189,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
       <script src="Resources/Public/JavaScript/bootstrap.min.js"></script>
       <script src="Resources/Public/JavaScript/slick.min.js"></script>
-      <script src="Resources/Public/JavaScript/less.min.js" data-poll="1000" data-relative-urls="false"></script>
+      <script src="Resources/Public/JavaScript/svg-injector.min.js"></script>
+      <!--<script src="Resources/Public/JavaScript/selectize.js"></script>-->
       <script src="Resources/Public/JavaScript/main.js"></script>
+
+      <script src="Resources/Public/JavaScript/less.min.js" data-poll="1000" data-relative-urls="false"></script>
    </body>
 </html>

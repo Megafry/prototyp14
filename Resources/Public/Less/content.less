@@ -1,0 +1,147 @@
+//stuff for the content:
+//don't set font-size, color, ... -> update the less variable and use it.
+
+a.anchorLink {
+	text-indent: -99999px !important;
+    text-decoration: none !important;
+    line-height: 1px !important;
+    font-size: 1px !important;
+    color: #ffffff !important;
+    display: block !important;
+    height: 0px !important;
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a.external-link[href*="http://"]:after,
+a.external-link[href*="https://"]:after {
+ 	    content: "\f08e";
+ 	    .fa;
+ 	    vertical-align: top;
+	    font-size: 10px;
+	    margin-left: 5px;
+ }
+
+.main-slider {
+			
+		// desktop
+		@media screen and (min-width: @screen-sm-min) {
+
+		.item {
+			height: 580px;
+		}
+			.text-box {
+				    background-color: rgba(0, 0, 0, 0.63);
+				    margin-top: 170px;
+				    color: #fff;
+				    padding: 20px 50px;
+				    border-radius: 5px;
+			    }
+			}
+
+		//mobile
+		@media screen and (max-width: @screen-xs-max) {
+			.item {
+				background-image: none !important;
+			}
+
+			.slick-dots {
+				top: 0;
+				bottom: auto;
+			}
+
+		}
+
+}
+
+.brand-liste {
+	
+	border-left: 2px solid @brand-primary;
+	padding-left: 15px;
+
+	.brand-liste-title {
+		font-size: 22px;
+	}
+
+	ul {
+		padding-left: 0px;
+
+		li {
+
+		list-style-type: none;
+		list-style-position: inside;
+
+			a {
+				&:before {
+					content: "\e029";
+					.glyphicon;
+					margin-right: 10px;
+					
+				}
+				    
+			}
+
+		}
+	}
+
+}
+
+
+.profile-area {
+	
+	.card {
+		background-color: #ffffff;
+		padding-bottom: 60px;
+
+		.card-bottom {
+			a {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+}
+
+.ui-color {
+	p {
+		height: 50px;
+		padding: 10px;
+		&:not(.gray-lighter-bg) {
+			color: #ffffff;
+		}
+		
+		
+
+	}
+}
+
+.brand-primary-bg {
+	background-color: @brand-primary;
+}
+.gray-base-bg {
+	background-color: @gray-base;
+}
+.gray-darker-bg {
+	background-color: @gray-darker;
+}
+.gray-dark-bg {
+	background-color: @gray-dark;
+}
+.gray-bg {
+	background-color: @gray;
+}
+.gray-light-bg {
+	background-color: @gray-light;
+}
+.gray-lighter-bg {
+	background-color: @gray-lighter;
+}

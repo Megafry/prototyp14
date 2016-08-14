@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	$('.single-item').slick({
 		dots: true,
+		lazyLoad: 'ondemand',
 		infinite: true,
 		speed: 1000,
 		autoplay: true,
@@ -17,6 +18,13 @@ $(document).ready(function(){
     	$(this).next().attr("date-fileName",filename);
     });
 	
+	/*
+	$(".defaultForm select").selectize({
+		create: true,
+		sortField: 'text'
+	});
+	*/
+
 
 });
 
