@@ -124,6 +124,51 @@ a.external-link[href*="https://"]:after {
 	}
 }
 
+
+
+.clientsbox {
+
+
+	.slick-slide {
+	    
+	   
+		 .logo {
+		 	background-color: #9d9d9d;
+		    background-size: contain;
+		    background-size: 70%;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+			margin: 15px;
+			height: 120px;
+
+			@media screen and (max-width: @screen-xs-max) {
+				height: auto;
+				padding-bottom: 35%;
+			}
+
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: all 0.5s ease-in-out;
+
+
+			
+	    }
+
+		&.slick-active .logo {
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
+		}
+	   
+		&.slick-current .logo {
+				-webkit-filter: none;
+				filter: none;
+				transform: scale(1.10);
+				box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.58);
+				
+			}
+	    
+	} 	
+}
+
 .brand-primary-bg {
 	background-color: @brand-primary;
 }

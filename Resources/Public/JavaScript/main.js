@@ -12,6 +12,27 @@ $(document).ready(function(){
 
 	});
 
+		$('.clientsbox').slick({
+		  slidesToShow: 3,
+		  centerMode: true,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
+		  speed: 500,
+		
+		  arrows: false,
+		   responsive: [
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        
+			       
+			        slidesToShow: 1
+			      }
+			    }
+		    ]
+		});
+
 	
 	$('input[type=file]').change( function(){
     	var filename = $(this).val().split('\\').pop();
@@ -24,6 +45,9 @@ $(document).ready(function(){
 		sortField: 'text'
 	});
 	*/
+
+
+
 
 
 });
