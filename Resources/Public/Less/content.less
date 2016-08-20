@@ -1,6 +1,15 @@
 //stuff for the content:
 //don't set font-size, color, ... -> update the less variable and use it.
 
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 a.anchorLink {
 	text-indent: -99999px !important;
     text-decoration: none !important;
@@ -72,18 +81,43 @@ a.external-link[href*="https://"]:after {
 	}
 
 	ul {
-		padding-left: 0px;
+		margin-top: 20px;
+		padding: 0;
+		padding-left: 15px;
+    	border-top: 1px solid @brand-primary;
+    	margin-bottom: @line-height-computed;
+    	margin-bottom: @line-height-computed;
+    	margin-toto: @line-height-computed*2;
+
+    	margin-toto: unset;
 
 		li {
 
-		list-style-type: none;
-		list-style-position: inside;
+			list-style-type: none;
+			list-style-position: inside;
+	    	
+		    border-bottom: 1px solid @brand-primary;
+		    padding: 0px;
+
+
+	
 
 			a {
+
+				display: block;
+    			padding: 10px 0px;
+
+    			&:hover {
+					background-color: @gray-lighter;
+					text-decoration: none;
+				}
+
 				&:before {
 					content: "\e029";
 					.glyphicon;
 					margin-right: 10px;
+					font-size: 23px;
+    				top: 6px;
 					
 				}
 				    
@@ -169,6 +203,8 @@ a.external-link[href*="https://"]:after {
 	} 	
 }
 
+
+
 .brand-primary-bg {
 	background-color: @brand-primary;
 }
@@ -190,3 +226,8 @@ a.external-link[href*="https://"]:after {
 .gray-lighter-bg {
 	background-color: @gray-lighter;
 }
+
+
+
+
+
