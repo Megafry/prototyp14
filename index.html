@@ -14,7 +14,7 @@
 
    </head>
    <base href=""> <!-- http://localhost/prototyp14/ -->
-   <body>
+   <body class="dev">
 
 <header>
 
@@ -90,11 +90,11 @@
 <section class="section1">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-md-4">
           <img src="#" class="hidden"/>
           <h1 class="logo">Logo-brand</h1>
       </div>
-      <div class="col-lg-offset-5 col-lg-3">
+      <div class="col-md-offset-5 col-md-3">
          <form method="post" action="#" class="defaultForm">
          
             <input type="text" value="" placeholder="search">
@@ -333,7 +333,76 @@
                     <p class="brand-white-bg" >@brand-white</p>
                   </div>
 
+          </div> <!-- col- -->
+      </div><!-- row -->
+   </div><!-- container -->
+  </section>
 
+ <section class="section3">
+     <div class="container">
+        <div class="row">
+           <div class="col-sm-12">
+              <!-- Text -->
+
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>btn btn-primary</h5>
+                  <a class="btn btn-primary">btn-primary</a>
+                </div>
+                <div class="col-md-4">
+                  <h5>btn btn-primary active</h5>
+                  <a class="btn btn-primary active">btn-primary</a>
+                </div>
+                <div class="col-md-4">
+                  <h5>btn btn-primary disabled</h5>
+                  <a class="btn btn-primary disabled">btn-primary</a>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>btn btn-primary btn-outline</h5>
+                  <a class="btn btn-primary btn-outline">btn-primary</a>
+                </div>
+                <div class="col-md-4">
+                  <h5>btn btn-primary btn-outline active</h5>
+                  <a class="btn btn-primary btn-outline active">btn-primary</a>
+                </div>
+                <div class="col-md-4">
+                  <h5>btn btn-primary btn-outline disabled </h5>
+                  <a class="btn btn-primary btn-outline disabled">btn-primary</a>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                <h5>btn btn-primary btn-lg</h5>
+                <a class="btn btn-primary btn-lg">btn-primary</a>
+                </div>
+                 <div class="col-md-3">
+                <h5>btn btn-primary normal</h5>
+                <a class="btn btn-primary">btn-primary</a>
+                </div>
+                <div class="col-md-3">
+                  <h5>btn btn-primary btn-sm</h5>
+                  <a class="btn btn-primary btn-sm">btn-primary</a>
+                </div>
+                <div class="col-md-3">
+                  <h5>btn btn-primary btn-xs</h5>
+                  <a class="btn btn-primary btn-xs">btn-primary</a>
+                </div>
+               </div>
+         
+          </div> <!-- col- -->
+      </div><!-- row -->
+   </div><!-- container -->
+  </section>
+
+ <section class="section1">
+     <div class="container">
+        <div class="row">
+           <div class="col-sm-12">
+              <!-- Text -->   
 
                    <figure>
                     <img src="Resources/Public/Images/megafry_photo_3.jpg" alt="SelfHTML-Logo" class="img-responsive">
@@ -378,6 +447,24 @@
                   <blockquote>
                      Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
                      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                  <blockquote>
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="#">
+                           <img class="img-circle media-object" src="https://avatars0.githubusercontent.com/u/10438940?v=3&amp;s=460" style="width: 190px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Middle aligned media</h4>
+                        Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
+                        <footer>By <cite title="Source Title">@Megafry</cite></footer>
+                      </div>
+                    </div>
+
+                   
+                    
+                     
                   </blockquote>
                   <blockquote class="blockquote-reverse">
                      Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
@@ -499,7 +586,10 @@
       <div class="container news">
           <div class="row">
               <div class="col-md-5">
-                  <img src="Resources/Public/Images/megafry_photo_3.jpg" class="img-responsive" alt="lorem">
+                  <figure>
+                    <img src="Resources/Public/Images/megafry_photo_3.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>ed sit amet metus ac orci eleifend feugiat. Nulla pharetra nunc sed ligula sodales, nec faucibus purus pharetra. Interdum et malesuada fames ac ante ipsum</figcaption>
+                  </figure>
               </div>
               <div class="col-md-7">
                   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -510,7 +600,10 @@
           </div>
           <div class="row">
               <div class="col-md-5 col-md-push-7">
-                  <img src="Resources/Public/Images/megafry_photo_1.jpg" class="img-responsive" alt="lorem">
+                  <figure>
+                    <img src="Resources/Public/Images/megafry_photo_1.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>Fig1. - the wall of berlin</figcaption>
+                  </figure>
               </div>
               <div class="col-md-7 col-md-pull-5">
                   <h2>Sed imperdiet tellus sit amet mi ultrices, eu pretium nunc scelerisque.</h2>
@@ -521,7 +614,7 @@
           </div>
           <div class="row">
               <div class="col-md-5">
-                  <img src="Resources/Public/Images/megafry_photo_4.jpg" class="img-responsive hidden" alt="lorem">
+                 
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/idPicUjhqII" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="col-md-7">
@@ -533,7 +626,10 @@
           </div>
           <div class="row">
               <div class="col-md-5 col-md-push-7">
-                  <img src="Resources/Public/Images/megafry_photo_2.jpg" class="img-responsive" alt="lorem">
+                  <figure>
+                    <img src="Resources/Public/Images/megafry_photo_2.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>Nyhavn, Kopenhagen, Danemark</figcaption>
+                  </figure>
               </div>
               <div class="col-md-7 col-md-pull-5">
                   <h2>Nam in magna varius, feugiat sapien sed, mattis sapien.</h2>
@@ -544,7 +640,10 @@
           </div>
           <div class="row">
               <div class="col-md-5">
-                  <img src="Resources/Public/Images/megafry_photo_3.jpg" class="img-responsive" alt="lorem">
+                  <figure>
+                    <img src="Resources/Public/Images/megafry_photo_3.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>FKastellet, København K, Dänemark.</figcaption>
+                  </figure>
               </div>
               <div class="col-md-7">
                   <h2>Ut venenatis sem euismod, faucibus velit sit amet, aliquet ex.</h2>
@@ -554,23 +653,43 @@
               </div>
           </div>
           <div class="row">
-              <div class="col-md-5 col-md-push-7">
-                  <img src="Resources/Public/Images/megafry_photo_4.jpg" class="img-responsive" alt="lorem">
-              </div>
-              <div class="col-md-7 col-md-pull-5">
+              
+             
+              
+              <div class="col-md-12">
+                  <figure class="figure-float-right">
+                    <img src="Resources/Public/Images/megafry_photo_4.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>Fig1. - Vindmøllen i Kastellet</figcaption>
+                  </figure>
                   <h2>Maecenas nec orci ut enim faucibus dapibus.</h2>
-                  <p><span class="bold">17 Aut 2016</span> Duis tincidunt augue vitae massa venenatis rutrum a sed sapien. Donec tin urna ut dapibus. Vivamus blandit condimentum tortor et tempus. Nullam porttitor rutrum porta. Sed eget arcu ullamcorper, scelerisque ex at, lacinia libero. Ut sodales pretium neque non malesuada. Phasellus ornare cursus justo non condimentum. Donec id lectus interdum, vestibulum lectus ut, fringilla neque. Quisque id lorem pretium dolor ultrices pellentesque.  cidunt a urna ut dapibus. Vivamus blandit condimentum tortor et tempus. Nullam porttitor rutrum porta. Sed eget arcu ullamcorper, scelerisque ex at, lacinia libero. Ut sodales pretium neque non malesuada. Phasellus ornare cursus justo non condimentum. Donec id lectus interdum, vestibulum lectus ut, fringilla neque. Quisque id lorem pretium dolor ultrices pellentesque. Phasellus eu nibh dolor. Aliquam lacus orci, ornare quis nulla ac, cursus aliquet mauris.</p>
+                  <p><span class="bold">17 Aut 2016</span> Duis tincidunt augue vitae massa venenatis rutrum a sed sapien. Donec tin urna ut dapibus. Vivamus blandit condimentum tortor et tempus. Nullam porttitor rutrum porta. Sed eget arcu ullamcorper, scelerisque ex at, lacinia libero. Ut sodales pretium neque non malesuada. Phasellus ornare cursus justo non condimentum. Donec id lectus interdum, vestibulum lectus ut, fringilla neque. Quisque id lorem pretium dolor ultrices pellentesque.  cidunt a urna ut dapibus. Vivamus blandit condimentum tortor et tempus. Nullam porttitor rutrum porta. Sed eget arcu ullamcorper, scelerisque ex at, lacinia llacinia libero. Ut sodales pretium neque non malesuada. Phasellus ornare cursus justo non condimentum. Donec id lectus interdum, vestibulum lectus ut, fringilla neque. Quisque id lorem pretium dolor ultrices pellentesque.  cidunt a urna ut dapibus. Vivamus blandit condimentuibero. Ut sodales pretium neque non malesuada. Phasellus ornare cursus justo non condimentum. Donec id lectus interdum, vestibulum lectus ut, fringilla neque. Quisque id lorem pretium dolor ultrices pellentesque. Phasellus eu nibh dolor. Aliquam lacus orci, ornare quis nulla ac, cursus aliquet mauris.</p>
                   <a href=""><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> More</a>
                   <hr>
               </div>
           </div>
           <div class="row">
-              <div class="col-md-5">
-                  <img src="Resources/Public/Images/megafry_photo_1.jpg" class="img-responsive" alt="lorem">
-              </div>
-              <div class="col-md-7">
+             
+              <div class="col-md-12">
+                  <figure class="figure-float-left">
+                    <img src="Resources/Public/Images/megafry_photo_1.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>e justo quis, fermentum tellus.</figcaption>
+                  </figure>
                   <h2>Ut facilisis sem tincidunt lectus vulputate, at viverra nisl iaculis.</h2>
-                  <p><span class="bold">25 Aut 2016</span> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibend  cubilia Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibendum, venenatis orci. Vestibulum eget auctor ante. Curabitur consequat commodo neque, ac sagittis leo rhoncus sit amet. Curabitur tincidunt quam eu ultricies euismod. Phasellus hendrerit, justo vitae porta efficitur, diam orci pellentesque diam, et ornare orci mi venenatis leo.</p>
+                  <p><span class="bold">25 Aut 2016</span> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibend  cubilia Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, cong, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibend  cubilia Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibendum, venenatis orci. Vestibulum eget auctor ante. Curabitur consequat commodo neque, ac sagittis leo rhoncus sit amet. Curabitur tincidunt quam eu ultricies euismod. Phasellus hendrerit, justo vitae porta efficitur, diam orci pellentesque diam, et ornare orci mi venenatis leo.</p>
+                  <a href=""><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> More</a>
+                  <hr>
+              </div>
+          </div>
+
+            <div class="row">
+             
+              <div class="col-md-12">
+                  <figure class="figure-float-right">
+                    <img src="Resources/Public/Images/megafry_photo_1.jpg" class="img-responsive" alt="lorem">
+                    <figcaption>e justo quis, fermentum tellus.</figcaption>
+                  </figure>
+                  <h2>Ut facilisis sem tincidunt lectus vulputate, at viverra nisl iaculis.</h2>
+                  <p><span class="bold">25 Aut 2016</span> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibend  cubilia Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, cong, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibend  cubilia Curae; Proin quis vestibulum ex. In ut sapien tempor, eleifend nulla sit amet, tristique justo. Morbi vel luctus quam. Donec quis elit consectetur, congue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequue justo quis, fermentum tellus. Sed sodales libero varius purus varius, ac lobortis nulla hendrerit. Fusce vel orci vitae orci consequat euismod sit amet quis ligula. Nulla id magna commodo, bibendum neque bibendum, venenatis orci. Vestibulum eget auctor ante. Curabitur consequat commodo neque, ac sagittis leo rhoncus sit amet. Curabitur tincidunt quam eu ultricies euismod. Phasellus hendrerit, justo vitae porta efficitur, diam orci pellentesque diam, et ornare orci mi venenatis leo.</p>
                   <a href=""><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> More</a>
                   <hr>
               </div>
@@ -764,7 +883,11 @@ print 'It took ' + i + ' iterations to sort the deck.';
                            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name">
                         </div>
                         <div class="col-sm-6">
-                           <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email">
+                           <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" class="parsley-error">
+                           <!-- exemple of message from a Javascript validation-->
+                           <ul class="parsley-errors-list filled">
+                              <li class="parsley-required">Dieses ist ein Pflichtfeld</li>
+                            </ul>
                         </div>
                      </div>
                     
@@ -775,7 +898,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
                         <div class="col-sm-6">
                            <select name="demo-category" id="demo-category">
                               <option value="">- Category -</option>
-                              <option value="1">Lorem ipsum dolor sitt dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam </option>
+                              <option value="1">Lorem ipsum dolor sitt</option>
                               <option value="1">Shipping</option>
                               <option value="1">Administration</option>
                               <option value="1">Human Resources</option>
@@ -783,6 +906,15 @@ print 'It took ' + i + ' iterations to sort the deck.';
                         </div>
                      </div>
                     
+                          <select name="demo-category-multi" id="demo-category-multi" multiple>
+                              <option value="">- Category -</option>
+                              <option value="1">Lorem ipsum dolor sitt</option>
+                              <option value="1">Shipping</option>
+                              <option value="1">Administration</option>
+                              <option value="1">Human Resources</option>
+                           </select>
+
+
                      <input type="file" value="" id="example-file-input">
                      <label for="example-file-input" class="">Text</label>
                    
@@ -1492,17 +1624,18 @@ print 'It took ' + i + ' iterations to sort the deck.';
   <div class="container">
       <div class="row">
           
-            <div class="col-lg-12">
+            <div class="col-md-9">
                
-              <ul class="list-inline float-left">
-                     <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></i></a></li> |
-                     <li><a href="#">sub-page</a></li> |
-                     <li><a href="#">sub-sub-page</a></li> |
+                <ul class="breadcrumb">
+                     <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></i></a></li>
+                     <li><a href="#">sub-page</a></li>
+                     <li><a href="#">sub-sub-page</a></li>
                      <li><a href="#" class="bold">current</a></li>
 
    
                 </ul>
-                
+              </div>
+              <div class="col-md-3">
 
                   <ul class="list-inline float-right">
                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -1513,12 +1646,12 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
               
             </div>
-             <div class="col-lg-12">
+             <div class="col-md-12">
                 <hr>
             </div>
          
       </div>
-     
+    
 
         <div class="row">
           
@@ -1590,7 +1723,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
       <footer id="footer">
             <div class="container">
               <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-md-12">
                     <ul class="list-inline" >
                        <li><a href="#" >Sitemap</a></li>|
                        <li><a href="#">Kontakt</a></li>|

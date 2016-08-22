@@ -177,5 +177,32 @@ section {
 			}
 		}
 
+}
 
+/*  dev stupff */
+body.dev:after {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	content: 'xs';
+	color: @brand-white;
+	background-color: @brand-primary;
+	padding: 5px;
+	border-top-left-radius: 5px;
+	cursor: help;
+}
+@media (min-width: @screen-sm-min) {
+		body.dev:after {
+		content: 'sm';
+	}
+}
+@media (min-width: @screen-md-min) {
+		body.dev:after {
+		content: 'md';
+	}
+}
+@media (min-width: @screen-lg-min) {
+		body.dev:after {
+		content: 'lg';
+	}
 }
