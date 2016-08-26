@@ -2,7 +2,6 @@
 
 .slick-slider {
     position: relative;
-    display: block;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -13,6 +12,14 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    
+	display: none;
+	visibility: hidden;
+	
+    &.slick-initialized {
+      display: block;
+      visibility: visible;
+    }
    
 } 
 .slick-list {
@@ -81,15 +88,12 @@
         display: none;
     }
 
-    display: none;
+   
 
     &.dragging img {
         pointer-events: none;
     }
 
-    .slick-initialized & {
-        display: block;
-    }
 
     .slick-loading & {
         visibility: hidden;

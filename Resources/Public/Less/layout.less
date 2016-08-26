@@ -1,5 +1,6 @@
 //stuff for the layout:
 
+
 body {
 	
 	-webkit-font-smoothing: antialiased;
@@ -7,11 +8,8 @@ body {
 	text-rendering: optimizeLegibility;
 
 	* {
-
 	    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-
 	}
-
 }
 
 :focus {
@@ -47,9 +45,11 @@ a.anchorLink {
 section {
 
 
-	&:not(.section-full){
+	&:not(.section-noPadding){
+		/* default paddind for each section*/
 		padding: 50px 0;
 	}
+
 	
 	&.section1 {
 		background-color: #ffffff;
@@ -130,7 +130,7 @@ section {
 
 }
 
-.donate-section-trigger {
+.defaultContent-section-trigger {
 		border-top: 1px solid @brand-primary;
 		overflow: hidden;
 		margin-bottom: 10px;
@@ -178,6 +178,13 @@ section {
 		}
 
 }
+
+
+
+
+
+
+
 
 /*  dev stupff */
 body.dev:after {

@@ -1,6 +1,73 @@
-//stuff for the content:
-//don't set font-size, color, ... -> update the less variable and use it.
+/*stuff for the content:*/
+/*don't set font-size, color, ... -> update the less variable and use it.*/
 
+#accessKeys {
+	margin-bottom: 0;
+	li {
+		list-style: none;
+	}
+}
+.skipLink > a, 
+.skipLink > a:visited, 
+.skipLink > a:link, 
+a.skipLink, 
+a.skipLink:visited, 
+a.skipLink:link {
+    position: absolute;
+    z-index: 100000;
+    top: -9999px;
+    left: -9999px;
+    padding: 5px 8px;
+    border: 1px solid @brand-primary;
+    background: #f5f4f1;
+    font-size: @font-size-large;
+    text-decoration: none;
+    color: @brand-primary;
+}
+
+a.anchorLink {
+	text-indent: -99999px !important;
+    text-decoration: none !important;
+    line-height: 1px !important;
+    font-size: 1px !important;
+    color: #ffffff !important;
+    display: block !important;
+    height: 0px !important;
+}
+
+
+/* colors */
+
+.brand-primary-bg {
+	background-color: @brand-primary;
+}
+.brand-white-bg {
+	background-color: @brand-white;
+}
+
+/* Gray */
+.gray-base-bg {
+	background-color: @gray-base;
+}
+.gray-darker-bg {
+	background-color: @gray-darker;
+}
+.gray-dark-bg {
+	background-color: @gray-dark;
+}
+.gray-bg {
+	background-color: @gray;
+}
+.gray-light-bg {
+	background-color: @gray-light;
+}
+.gray-lighter-bg {
+	background-color: @gray-lighter;
+
+}
+
+
+/* direct Classes*/
 
 .float-left {
 	float: left;
@@ -8,6 +75,14 @@
 
 .float-right {
 	float: right;
+}
+
+.bold {
+	font-weight: bold; 	
+}
+
+.active a {
+	text-decoration: underline;
 }
 
 .figure-float-right {
@@ -31,7 +106,6 @@
 
 
 /* img */
-
 figure {
 	margin-bottom: @line-height-computed*1.5;	/* 30px*/
 
@@ -42,24 +116,13 @@ figure {
 	}
 }
 
+/* spacer after Resposive Video*/
 .embed-responsive {
 	margin-bottom: @line-height-computed*1.5;	/* 30px*/
 }
 
 
-.bold {
-	font-weight: bold; 	
-}
 
-a.anchorLink {
-	text-indent: -99999px !important;
-    text-decoration: none !important;
-    line-height: 1px !important;
-    font-size: 1px !important;
-    color: #ffffff !important;
-    display: block !important;
-    height: 0px !important;
-}
 
 
 .fa {
@@ -80,7 +143,7 @@ a.external-link[href*="https://"]:after {
 	    margin-left: 5px;
  }
 
- .btn-outline {
+.btn-outline {
     background-color: transparent;
     color: inherit;
     
@@ -89,13 +152,17 @@ a.external-link[href*="https://"]:after {
     }
 }
 
+
+/* definition for the Slick Slider*/
 .main-slider {
 			
 		// desktop
 		@media screen and (min-width: @screen-sm-min) {
 
 		.item {
-			height: 580px;
+			height: 620px;
+			background-position: center 40%;
+
 		}
 			.text-box {
 				    background-color: rgba(0, 0, 0, 0.63);
@@ -106,7 +173,7 @@ a.external-link[href*="https://"]:after {
 			    }
 			}
 
-		//mobile
+		/*mobile*/
 		@media screen and (max-width: @screen-xs-max) {
 			.item {
 				background-image: none !important;
@@ -121,19 +188,80 @@ a.external-link[href*="https://"]:after {
 
 }
 
+.media-left,
+.media-right,
+.media-body {
+	@media screen and (max-width: @screen-xs-max) {
+		display: block;
+		width: 100%;
+    }
+}
+
+.file-info {
+	color: @gray;
+	.small;
+}
+
+.table-responsive {
+	
+	&::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		background-color: @brand-primary;
+		
+	}
+	&::-webkit-scrollbar-track {
+		height: 5px;
+	} 
+	
+	
+}
+
+.sitemap {
+	ul {
+		li {
+			list-style-type: circle;
+			/*
+			list-style: none;
+			
+			a:before {
+				.glyphicon;
+				.small;
+				content: "\2212";
+				display: inline-block;
+			}
+			*/
+		}
+	}
+}
+
 .brand-liste {
 	
 	border-left: 2px solid @brand-primary;
 	padding-left: 15px;
+	
+	
+	&.striped {
+		li:nth-child(odd), 
+		.item:nth-child(odd) {
+			background-color:  lighten(@gray-lighter, 4%);
+		}
+		
+	}
 
 	.brand-liste-title {
 		font-size: 22px;
 	}
 
-	ul {
+	ul, 
+	.groupe {
 		margin-top: 20px;
 		padding: 0;
-		padding-left: 15px;
+		/*padding-left: 15px;*/
     	border-top: 1px solid @brand-primary;
     	margin-bottom: @line-height-computed;
     	margin-bottom: @line-height-computed;
@@ -141,7 +269,8 @@ a.external-link[href*="https://"]:after {
 
     	margin-toto: unset;
 
-		li {
+		li, 
+		.item {
 
 			list-style-type: none;
 			list-style-position: inside;
@@ -153,10 +282,11 @@ a.external-link[href*="https://"]:after {
 	
 
 			a {
-
+				
 				display: block;
     			padding: 10px 0px;
-
+    			padding-left: 10px;
+    			    
     			&:hover {
 					background-color: @gray-lighter;
 					text-decoration: none;
@@ -170,6 +300,12 @@ a.external-link[href*="https://"]:after {
     				top: 6px;
 					
 				}
+				
+				&.download {
+					&:before {
+						content: "\e026";
+					}
+				}
 				    
 			}
 
@@ -178,6 +314,22 @@ a.external-link[href*="https://"]:after {
 
 }
 
+.accordion {
+	.item {
+			a {
+				&:before {
+					content: "\e088" !important;
+					transition: transform 0.2s ease-in-out;
+				}
+				
+				&.collapsed {
+					&:before {
+						transform: rotate(45deg);
+					}
+				}
+			}
+	}
+}
 
 .profile-area {
 	
@@ -211,95 +363,6 @@ a.external-link[href*="https://"]:after {
 }
 
 
-.clientsbox {
-
-
-	.slick-slide {
-	    
-	   
-		 .logo {
-		 	background-color: #9d9d9d;
-		    background-size: contain;
-		    background-size: 70%;
-		    background-position: center center;
-		    background-repeat: no-repeat;
-			margin: 15px;
-			height: 120px;
-			cursor: pointer;
-
-			@media screen and (max-width: @screen-xs-max) {
-				height: auto;
-				padding-bottom: 35%;
-			}
-
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-			transition: all 0.5s ease-in-out;
-
-
-			
-	    }
-
-		&.slick-active .logo {
-			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
-		}
-	   
-		&.slick-current .logo {
-				-webkit-filter: none;
-				filter: none;
-				transform: scale(1.10);
-				box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.58);
-				
-			}
-	    
-	} 	
-}
-
-
-
-.news {
-	h1,h2 {
-		margin-top: -5px;
-	}
-
-}
-
-
-#googleMap {
-	/*height: 350px;*/
-
-	padding-bottom: 45%;
-	width: 100%;
-
-}
-
-.brand-primary-bg {
-	background-color: @brand-primary;
-}
-.brand-white-bg {
-	background-color: @brand-white;
-}
-
-/* Gray */
-.gray-base-bg {
-	background-color: @gray-base;
-}
-.gray-darker-bg {
-	background-color: @gray-darker;
-}
-.gray-dark-bg {
-	background-color: @gray-dark;
-}
-.gray-bg {
-	background-color: @gray;
-}
-.gray-light-bg {
-	background-color: @gray-light;
-}
-.gray-lighter-bg {
-	background-color: @gray-lighter;
-
-}
 
 
 
