@@ -75,6 +75,7 @@ function initMap() {
     center: {lat: 55.69107 , lng:12.59288 },
     zoom: 15,
     scrollwheel: false,
+    disableDefaultUI: true,
 
     styles:[
     {

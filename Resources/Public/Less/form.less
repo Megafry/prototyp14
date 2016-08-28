@@ -27,6 +27,11 @@
 	}
 
 	fieldset {
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
 		
 		&:not(.inline) {
 			input[type=radio], input[type=checkbox] {
@@ -173,8 +178,10 @@
 	}
 	
 	.input-group {
+		margin-bottom: @form-group-margin-bottom; 
+
 		input, .input-group-btn {
-			vertical-align: top;
+			margin-bottom: 0 !important;
 		}
 	}
 	
