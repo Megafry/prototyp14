@@ -39,9 +39,10 @@
 		});
 
 
+       
 		
 		//make youtube and vimeo video responsive
-		$('iframe[src*="youtube.com"],iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9">');
+		//$('iframe[src*="youtube.com"],iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9">');
 
 	
 
@@ -50,12 +51,10 @@
 		$(this).next().attr("date-fileName",filename);
 	});
 
-	/*
-	$(".defaultForm select").selectize({
-		create: true,
-		sortField: 'text'
-	});
-	*/
+    $(".defaultForm select, .selectize").selectize({
+        //create: true,
+        //sortField: 'text'
+    });
 
 
 	});

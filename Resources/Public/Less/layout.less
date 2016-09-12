@@ -7,9 +7,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 
-	* {
-	    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	}
+	
+}
+
+* {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 :focus {
@@ -41,6 +43,13 @@ a.anchorLink {
 	}
 }
 
+
+
+.container {
+	@media screen and (min-width: @screen-sm-min) {
+		transition: all 0.5s ease-in-out;
+	}
+}
 
 section {
 

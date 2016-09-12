@@ -261,16 +261,28 @@
 		top: 50%;
 		right: @selectize-arrow-offset;
 		margin-top: round((-1 * @selectize-arrow-size / 2));
+		/*
 		width: 0;
 		height: 0;
 		border-style: solid;
 		border-width: @selectize-arrow-size @selectize-arrow-size 0 @selectize-arrow-size;
 		border-color: @selectize-arrow-color transparent transparent transparent;
+		*/
+		height: 10px;
+	    width: 10px;
+		background-image: url("@{basePath}Images/arrow.svg");
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		
 	}
 	&.dropdown-active:after {
 		margin-top: @selectize-arrow-size * -0.8;
+		/*
 		border-width: 0 @selectize-arrow-size @selectize-arrow-size @selectize-arrow-size;
 		border-color: transparent transparent @selectize-arrow-color transparent;
+		*/
+		transform: rotate(180deg);
 	}
 }
 
